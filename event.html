@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دليل فعاليات SVU | تفاصيل الفعالية</title>
+  <!-- Bootstrap 5 CSS عبر CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+ <style>
+    .social-icon-btn {
+      width: 40px;
+      height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      color: #fff;
+      font-size: 1.15rem;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .social-icon-btn:hover {
+      background: var(--bs-primary);
+      color: #fff;
+      transform: translateY(-3px);
+      box-shadow: 0 4px 10px rgba(13, 110, 253, 0.35);
+    }
+    .gallery-img {
+      height: 160px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- رأس الصفحة -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+          <span>🎓</span> دليل فعاليات SVU
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="تبديل القائمة">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto  d-flex  gap-4">
+            <li class="nav-item"><a class="nav-link " href="index.html">الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link" href="events.html">كل الفعاليات</a></li>
+             <li class="nav-item"><a class="nav-link active fw-bold" href="event.html">تفاصيل الفعاليات </a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">عن الدليل</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+          </ul>
+        </div>
+
+        
+<div class="ms-auto d-flex align-items-center">
+  <a href="contact.html" class="btn btn-light text-primary rounded-pill px-3 py-1 btn-sm fw-bold shadow-sm">
+    <i class="bi bi-plus-circle me-1"></i> أضف فعالية
+  </a>
+</div>
+
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- المحتوى الرئيسي (Main) -->
+  <main class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        
+        <!-- العمود الأيمن: عنوان، صور، وصف، معرض صغير -->
+        <div class="col-lg-8">
+          <div class="mb-3">
+            <span class="badge badge-tech mb-2">تقني وتطوير برمجيات</span>
+            <h1 class="fw-bold text-dark">المؤتمر السنوي لتقانات الويب والذكاء الصنعي 2026</h1>
+          </div>
+          
+          <!-- صورة الفعالية البارزة -->
+          <img src="assets/images/pro1.jpg" class="img-fluid rounded-3 mb-4 shadow-sm w-100" style="max-height: 420px; object-fit: cover;" alt="صورة المؤتمر">
+
+          <!-- وصف كامل للفعالية -->
+          <div class="card p-4 shadow-sm border-0 mb-4 bg-white">
+            <h4 class="fw-bold mb-3 text-primary">عن الفعالية</h4>
+            <p class="text-secondary leading-relaxed mb-3">
+              يُعد المؤتمر السنوي لتقانات الويب والذكاء الصنعي الحدث الأكاديمي والتقني الأبرز في الجامعة الافتراضية السورية، حيث يجمع نخبة من الأكاديميين، والمهندسين، والطلاب لمناقشة أحدث التطورات في تطوير البرمجيات، أطر العمل الحديثة، ودمج خوارزميات الذكاء الاصطناعي في المنظومات الخدمية.
+            </p>
+            <p class="text-secondary leading-relaxed mb-0">
+              يتضمن البرنامج عدة جلسات حوارية، واستعراضاً لأفضل المشاريع والأبحاث الطلابية، إضافة إلى ورشات عمل تطبيقية توفر للمشاركين شهادات حضور ومشاركة معتمدة من الجامعة.
+            </p>
+          </div>
+
+          <!-- معرض صغير (معرض صور الفعالية) -->
+          <div class="card p-4 shadow-sm border-0 bg-white">
+            <h5 class="fw-bold mb-3 text-dark">
+              <i class="bi bi-images text-primary me-2"></i>معرض صور الفعالية
+            </h5>
+            <div class="row g-3">
+              <div class="col-md-4">
+                <img src="assets/images/pro8.jpg" class="gallery-img shadow-sm" alt="جلسة نقاش">
+              </div>
+              <div class="col-md-4">
+                <img src="assets/images/pro9.jpg" class="gallery-img shadow-sm" alt="ورشة عمل">
+              </div>
+              <div class="col-md-4">
+                <img src="assets/images/pro10.jpg" class="gallery-img shadow-sm" alt="تكريم المشاركين">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- العمود الأيسر: بطاقة التواريخ والمكان والأزرار والخريطة الثابتة -->
+        <div class="col-lg-4">
+          <div class="card p-4 shadow-sm border-0 mb-4 bg-white sticky-top" style="top: 90px; z-index: 10;">
+            <h5 class="fw-bold mb-3 text-dark border-bottom pb-2">بيانات الفعالية</h5>
+            
+            <ul class="list-unstyled mb-4 small text-secondary">
+              <li class="mb-2"><strong>📅 التاريخ:</strong> 20 تشرين الأول 2026</li>
+              <li class="mb-2"><strong>⏰ التوقيت:</strong> 10:00 صباحاً - 04:00 مساءً</li>
+              <li class="mb-2"><strong>📍 المكان:</strong> مدرج الجامعة الافتراضية - دمشق</li>
+              <li class="mb-2"><strong>👥 المنظم:</strong> كلية الهندسة المعلوماتية</li>
+            </ul>
+
+            <!-- أزرار تفاعلية (أضف للتقويم + شارك + حجز مقعد وهمي) -->
+            <div class="d-grid gap-2 mb-4">
+              <button onclick="triggerCalendarAlert()" class="btn btn-primary rounded-pill">
+                <i class="bi bi-calendar-plus me-1"></i> أضف للتقويم
+              </button>
+              <button onclick="triggerShareAlert()" class="btn btn-outline-secondary rounded-pill">
+                <i class="bi bi-share me-1"></i> شارك
+              </button>
+              <button type="button" class="btn btn-success rounded-pill" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                <i class="bi bi-ticket-perforated me-1"></i> حجز مقعد (مجاني)
+              </button>
+            </div>
+
+            <!-- خريطة ثابتة بصورة -->
+            <div class="border-top pt-3">
+              <h6 class="fw-bold small mb-2 text-dark">
+                <i class="bi bi-geo-alt-fill text-danger me-1"></i>خريطة الموقع الثابتة:
+              </h6>
+              <img src="assets/images/pro7.jpg" class="img-fluid rounded border shadow-sm w-100" style="height: 180px; object-fit: cover;" alt="خريطة الموقع الثابتة">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- قسم فعاليات ذات صلة (كروت مختصرة) -->
+      <div class="mt-5 pt-4 border-top">
+        <h4 class="fw-bold mb-4 text-dark">فعاليات ذات صلة</h4>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card p-3 shadow-sm border-0 h-100 ">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <span class="badge badge-tech mb-2">تقني</span>
+                  <h6 class="fw-bold mb-1">هاكاثون البرمجة والتطوير 2026</h6>
+                  <p class="text-muted small mb-2">تحدي برمجي متواصل لمدة 48 ساعة لتطوير حلول برمجية ابتكارية.</p>
+                  <small class="text-secondary d-block">📍 منصة البث الافتراضي | 📅 25 تشرين الأول</small>
+                </div>
+                <a href="event.html" class="btn btn-sm btn-outline-primary rounded-pill text-nowrap ms-2">عرض التفاصيل</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card p-3 shadow-sm border-0 h-100">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <span class="badge badge-academic mb-2">أكاديمي</span>
+                  <h6 class="fw-bold mb-1">جلسة نقاش مشاريع التخرج للمعلوماتية</h6>
+                  <p class="text-muted small mb-2">عرض نماذج البرمجيات للتقييم الأكاديمي بحضور الهيئة التدريسية.</p>
+                  <small class="text-secondary d-block">📍 مدرج الجامعة | 📅 30 تشرين الأول</small>
+                </div>
+                <a href="event.html" class="btn btn-sm btn-outline-primary rounded-pill text-nowrap ms-2">عرض التفاصيل</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Modal حجز مكان وهمي -->
+  <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="bookingModalLabel">حجز مقعد في الفعالية</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted small">أدخل اسمك ورقمك الجامعي لتثبيت حضورك والحصول على بطاقة الدخول:</p>
+          <div class="mb-3">
+            <label class="form-label small fw-bold">الاسم الكامل</label>
+            <input type="text" class="form-control" placeholder="اكتب اسمك الثلاثي">
+          </div>
+          <div class="mb-3">
+            <label class="form-label small fw-bold">الرقم الجامعي (ID)</label>
+            <input type="text" class="form-control" placeholder="مثال: svu_123456">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">إلغاء</button>
+          <button type="button" class="btn btn-primary rounded-pill" onclick="alert('تم تسجيل مقعدك بنجاح!');" data-bs-dismiss="modal">تأكيد الحجز</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- تذييل الصفحة -->
+  <footer class="bg-dark text-white py-5 mt-auto border-top border-secondary border-opacity-25">
+    <div class="container">
+      <div class="row gy-4 align-items-center">
+        
+        <!-- اليمين -->
+        <div class="col-lg-4 text-center text-lg-end">
+          <h4 class="fw-bold mb-2 d-flex align-items-center justify-content-center justify-content-lg-start gap-2">
+            <span>🎓</span> دليل فعاليات SVU
+          </h4>
+          <p class="text-secondary small mb-3">
+            بوابتك الجامعية الأولى لمتابعة وتنظيم كافة الأنشطة وورشات العمل الأكاديمية والطلابية.
+          </p>
+          <a href="contact.html" class="btn btn-outline-primary btn-sm rounded-pill px-3 text-white border-primary">
+            <i class="bi bi-chat-dots-fill me-1"></i> تواصل مع إدارة الدليل
+          </a>
+        </div>
+
+        <!-- الوسط -->
+        <div class="col-lg-4 text-center border-start-lg border-end-lg border-secondary border-opacity-25 px-lg-3">
+          <div class="d-inline-flex flex-column gap-2 text-secondary small mb-3 text-start">
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-envelope-at-fill text-primary"></i>
+              <span>balkhatib@svuonline.org</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-geo-alt-fill text-danger"></i>
+              <span>دمشق، المزة - مبنى الجامعة الافتراضية</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-telephone-fill text-success"></i>
+              <span>+963 11 218 1000</span>
+            </div>
+          </div>
+          <div class="text-light-emphasis small pt-2 border-top border-secondary border-opacity-25">
+            جميع الحقوق محفوظة © 2026 | مادة برمجة الويب BWP401
+          </div>
+        </div>
+
+        <!-- اليسار -->
+        <div class="col-lg-4 text-center text-lg-start">
+          <h6 class="text-light fw-bold mb-3">تابع أنشطة الجامعة:</h6>
+          <div class="d-flex justify-content-center justify-content-lg-start gap-2 flex-wrap">
+            <a href="https://facebook.com" target="_blank" class="social-icon-btn" title="فيسبوك">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://t.me" target="_blank" class="social-icon-btn" title="تلغرام">
+              <i class="bi bi-telegram"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social-icon-btn" title="انستغرام">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon-btn" title="لينكد إن">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+          <small class="text-secondary d-block mt-2">اشترك بالقنوات ليصلك كل جديد فوراً</small>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- زر الصعود للأعلى (Bonus) -->
+  <button id="scrollTopBtn" class="btn btn-primary shadow" title="إلى الأعلى">↑</button>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

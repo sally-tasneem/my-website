@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دليل فعاليات SVU | اتصل بنا</title>
+  <!-- Bootstrap 5 CSS عبر CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  
+</head>
+<body>
+
+  <!-- رأس الصفحة -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+          <span>🎓</span> دليل فعاليات SVU
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="تبديل القائمة">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto  d-flex  gap-4">
+            <li class="nav-item"><a class="nav-link " href="index.html">الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link" href="events.html">كل الفعاليات</a></li>
+             <li class="nav-item"><a class="nav-link" href="event.html">تفاصيل الفعاليات </a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">عن الدليل</a></li>
+            <li class="nav-item"><a class="nav-link active fw-bold" href="contact.html">اتصل بنا</a></li>
+          </ul>
+        </div>
+
+        
+<div class="ms-auto d-flex align-items-center">
+  <a href="contact.html" class="btn btn-light text-primary rounded-pill px-3 py-1 btn-sm fw-bold shadow-sm">
+    <i class="bi bi-plus-circle me-1"></i> أضف فعالية
+  </a>
+</div>
+
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- المحتوى الرئيسي  -->
+  <main class="py-5">
+    <div class="container">
+      
+      <div class="border-bottom pb-3 mb-4 text-center">
+        <h2 class="fw-bold text-dark mb-1">تواصل مع إدارة دليل الفعاليات</h2>
+        <p class="text-muted mb-0">نسعد باستقبال استفساراتكم، مقترحاتكم، أو طلبات اعتماد فعاليات جديدة.</p>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- العمود الأيمن: نموذج التواصل التفاعلي مع التحقق -->
+        <div class="col-lg-7">
+          <div class="card p-4 shadow-sm border-0 bg-white">
+            <h4 class="fw-bold mb-3 text-primary">
+              <i class="bi bi-envelope-paper-fill me-2"></i>نموذج إرسال رسالة
+            </h4>
+            
+            <!-- مكان عرض رسائل الخطأ والنجاح عبر JavaScript -->
+            <div id="formAlertContainer"></div>
+
+            <form id="contactForm" novalidate>
+              <div class="mb-3">
+                <label for="userName" class="form-label small fw-bold">الاسم الكامل: <span class="text-danger">*</span></label>
+                <input type="text" id="userName" class="form-control" placeholder="اكتب اسمك الثلاثي" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="userEmail" class="form-label small fw-bold">البريد الإلكتروني: <span class="text-danger">*</span></label>
+                <input type="email" id="userEmail" class="form-control" placeholder="example@svuonline.org" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="queryType" class="form-label small fw-bold">نوع الاستفسار:</label>
+                <select id="queryType" class="form-select">
+                  <option value="general">استفسار عام</option>
+                  <option value="new_event">طلب إضافة فعالية جديدة</option>
+                  <option value="technical">مشكلة تقنية في الموقع</option>
+                  <option value="feedback">اقتراح تحسين</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="subject" class="form-label small fw-bold">موضوع الرسالة:</label>
+                <input type="text" id="subject" class="form-control" placeholder="عنوان مختصر لموضوعك">
+              </div>
+
+              <div class="mb-3">
+                <label for="userMessage" class="form-label small fw-bold">نص الرسالة: <span class="text-danger">*</span></label>
+                <textarea id="userMessage" class="form-control" rows="5" placeholder="اكتب تفاصيل استفسارك أو طلبك هنا بالتفصيل..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary rounded-pill px-4 py-2 w-100 shadow-sm">
+                <i class="bi bi-send-fill me-2"></i>إرسال الرسالة الآن
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- العمود الأيسر: معلومات التواصل والخريطة الثابتة -->
+        <div class="col-lg-5">
+          <div class="card p-4 shadow-sm border-0 bg-white mb-4">
+            <h5 class="fw-bold mb-3 text-dark border-bottom pb-2">
+              <i class="bi bi-info-circle-fill text-primary me-2"></i>معلومات الاتصال المباشر
+            </h5>
+            
+            <ul class="list-unstyled mb-0 d-flex flex-column gap-3 small text-secondary">
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-geo-alt-fill text-danger fs-5"></i>
+                <div>
+                  <strong class="text-dark d-block">المقر الرئيسي:</strong>
+                  الجمهورية العربية السورية، دمشق - المزة، أوتوستراد، مبنى الجامعة الافتراضية السورية.
+                </div>
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-envelope-at-fill text-primary fs-5"></i>
+                <div>
+                  <strong class="text-dark d-block">البريد الإلكتروني للشكاوى والاستفسارات:</strong>
+                  balkhatib@svuonline.org
+                </div>
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-telephone-fill text-success fs-5"></i>
+                <div>
+                  <strong class="text-dark d-block">الهاتف والمقسم:</strong>
+                  +963 11 218 1000
+                </div>
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-clock-fill text-warning fs-5"></i>
+                <div>
+                  <strong class="text-dark d-block">ساعات العمل الرسمية:</strong>
+                  الأحد - الخميس: 9:00 صباحاً - 3:00 مساءً
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- خريطة الموقع الثابتة -->
+          <div class="card p-4 shadow-sm border-0 bg-white">
+            <h6 class="fw-bold mb-3 text-dark">
+              <i class="bi bi-map-fill text-primary me-2"></i>موقع الجامعة على الخريطة
+            </h6>
+            <img src="assets/images/pro7.jpg" class="img-fluid rounded border shadow-sm w-100" style="height: 200px; object-fit: cover;" alt="خريطة مقر الجامعة">
+            <small class="text-muted d-block mt-2">خريطة توضيحية لمركز نفاذ ومقر الجامعة الافتراضية بدمشق.</small>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- تذييل الصفحة -->
+  <footer class="bg-dark text-white py-5 mt-auto border-top border-secondary border-opacity-25">
+    <div class="container">
+      <div class="row gy-4 align-items-center">
+        
+        <!-- اليمين -->
+        <div class="col-lg-4 text-center text-lg-end">
+          <h4 class="fw-bold mb-2 d-flex align-items-center justify-content-center justify-content-lg-start gap-2">
+            <span>🎓</span> دليل فعاليات SVU
+          </h4>
+          <p class="text-secondary small mb-3">
+            بوابتك الجامعية الأولى لمتابعة وتنظيم كافة الأنشطة وورشات العمل الأكاديمية والطلابية.
+          </p>
+          <a href="contact.html" class="btn btn-outline-primary btn-sm rounded-pill px-3 text-white border-primary">
+            <i class="bi bi-chat-dots-fill me-1"></i> تواصل مع إدارة الدليل
+          </a>
+        </div>
+
+        <!-- الوسط -->
+        <div class="col-lg-4 text-center border-start-lg border-end-lg border-secondary border-opacity-25 px-lg-3">
+          <div class="d-inline-flex flex-column gap-2 text-secondary small mb-3 text-start">
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-envelope-at-fill text-primary"></i>
+              <span>balkhatib@svuonline.org</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-geo-alt-fill text-danger"></i>
+              <span>دمشق، المزة - مبنى الجامعة الافتراضية</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-telephone-fill text-success"></i>
+              <span>+963 11 218 1000</span>
+            </div>
+          </div>
+          <div class="text-light-emphasis small pt-2 border-top border-secondary border-opacity-25">
+            جميع الحقوق محفوظة © 2026 | مادة برمجة الويب BWP401
+          </div>
+        </div>
+
+        <!-- اليسار -->
+        <div class="col-lg-4 text-center text-lg-start">
+          <h6 class="text-light fw-bold mb-3">تابع أنشطة الجامعة:</h6>
+          <div class="d-flex justify-content-center justify-content-lg-start gap-2 flex-wrap">
+            <a href="https://facebook.com" target="_blank" class="social-icon-btn" title="فيسبوك">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://t.me" target="_blank" class="social-icon-btn" title="تلغرام">
+              <i class="bi bi-telegram"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social-icon-btn" title="انستغرام">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon-btn" title="لينكد إن">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+          <small class="text-secondary d-block mt-2">اشترك بالقنوات ليصلك كل جديد فوراً</small>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- زر الصعود للأعلى (Bonus) -->
+  <button id="scrollTopBtn" class="btn btn-primary shadow" title="إلى الأعلى">↑</button>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
